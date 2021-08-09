@@ -8,8 +8,26 @@ function setup() {
   rect(2000,0,2000,3000);
 }
 
+let mousepos = 25;
 
 function draw() {
-  fill(200,0,0);
-  rect(0,3000,2000,3000);
+  frameRate(6000);
+  if (mousepos < 25){
+    mousepos = 25;
+  }
+  fill(mousepos - 25);
+  
+  textSize(150);
+  
+  text('Encryption code',200,500);
+  
+  text('Encryption code',pos+200,500);
+}
+
+function mouseWheel(event) {
+  print(mousepos);
+  mousepos += event.delta;
+  if (mousepos < 25){
+    mousepos = 25;
+  }
 }
