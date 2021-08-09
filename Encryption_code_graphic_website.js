@@ -6,10 +6,13 @@ function setup() {
 let mousepos = 25;
 
 function draw() {
+  if (mousepos == 25){
   window.scroll({
-  //top: mousepos,
+  //top: 200,
   behavior: 'smooth' 
    });
+   //mousepos = 225;
+   }
   
   clear();
   fill(0,0,0);
