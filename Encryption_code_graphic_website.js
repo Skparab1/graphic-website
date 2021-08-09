@@ -6,6 +6,11 @@ function setup() {
 let mousepos = 25;
 
 function draw() {
+  window.scroll({
+  //top: mousepos,
+  behavior: 'smooth' 
+   });
+  
   clear();
   fill(0,0,0);
   rect(0,0,2000,1750);
@@ -37,6 +42,24 @@ function draw() {
   
   fill(mousepos - 500);
   text('All new features',700,1300);
+  
+  fill((-1 * mousepos)+255);
+  textSize(125);
+  fill(0);
+  
+  if (mousepos >= 1250){  
+    text('99 %',400,mousepos+500);
+    if (mousepos <= 1450){ 
+      text('Encryption accuracy',700,mousepos+500);
+    } else {
+      text('Encryption accuracy',700,2000);
+    }
+    text('More efficient algorithms',700,2200);
+    
+    text('User satisfaction',700,2400);
+  }
+  
+  
 }
 
 function mouseWheel(event) {
