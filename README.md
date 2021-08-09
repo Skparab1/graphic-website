@@ -1,5 +1,4 @@
 # graphic-website
 Graphic website of encryption code
 
-goal is to be like the apple website, where you have graphics and animations that are operated by scrolling
-
+It is supposed to end up similar to the apple website
